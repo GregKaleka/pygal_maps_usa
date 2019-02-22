@@ -24,7 +24,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="pygal_maps_usa",
-    version='1.0.1',
+    version='1.0.0',
     description="US state map for pygal",
     author="Serge droz",
     url="http://pygal.org/",
