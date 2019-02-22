@@ -23,7 +23,6 @@ US states map
 
 from __future__ import division
 from pygal.graph.map import BaseMap
-from pygal._compat import u
 import os
 
 
