@@ -17,7 +17,7 @@
 # You should have received a copy of the GNU Lesser General Public License
 # along with pygal. If not, see <http://www.gnu.org/licenses/>.
 """
-Swiss cantons map
+US states map
 
 """
 
@@ -27,46 +27,71 @@ from pygal._compat import u
 import os
 
 
-CANTONS = {
-    'kt-zh': u("ZH"),
-    'kt-be': u("BE"),
-    'kt-lu': u("LU"),
-    'kt-ju': u("JH"),
-    'kt-ur': u("UR"),
-    'kt-sz': u("SZ"),
-    'kt-ow': u("OW"),
-    'kt-nw': u("NW"),
-    'kt-gl': u("GL"),
-    'kt-zg': u("ZG"),
-    'kt-fr': u("FR"),
-    'kt-so': u("SO"),
-    'kt-bl': u("BL"),
-    'kt-bs': u("BS"),
-    'kt-sh': u("SH"),
-    'kt-ar': u("AR"),
-    'kt-ai': u("AI"),
-    'kt-sg': u("SG"),
-    'kt-gr': u("GR"),
-    'kt-ag': u("AG"),
-    'kt-tg': u("TG"),
-    'kt-ti': u("TI"),
-    'kt-vd': u("VD"),
-    'kt-vs': u("VS"),
-    'kt-ne': u("NE"),
-    'kt-ge': u("GE"),
+STATES = {
+    'AK': u('Alaska'),
+    'AL': u('Alabama'),
+    'AR': u('Arkansas'),
+    'AZ': u('Arizona'),
+    'CA': u('California'),
+    'CO': u('Colorado'),
+    'CT': u('Connecticut'),
+    'DC': u('District of Columbia'),
+    'DE': u('Delaware'),
+    'FL': u('Florida'),
+    'GA': u('Georgia'),
+    'HI': u('Hawaii'),
+    'IA': u('Iowa'),
+    'ID': u('Idaho'),
+    'IL': u('Illinois'),
+    'IN': u('Indiana'),
+    'KS': u('Kansas'),
+    'KY': u('Kentucky'),
+    'LA': u('Louisiana'),
+    'MA': u('Massachusetts'),
+    'MD': u('Maryland'),
+    'ME': u('Maine'),
+    'MI': u('Michigan'),
+    'MN': u('Minnesota'),
+    'MO': u('Missouri'),
+    'MS': u('Mississippi'),
+    'MT': u('Montana'),
+    'NC': u('North Carolina'),
+    'ND': u('North Dakota'),
+    'NE': u('Nebraska'),
+    'NH': u('New Hampshire'),
+    'NJ': u('New Jersey'),
+    'NM': u('New Mexico'),
+    'NV': u('Nevada'),
+    'NY': u('New York'),
+    'OH': u('Ohio'),
+    'OK': u('Oklahoma'),
+    'OR': u('Oregon'),
+    'PA': u('Pennsylvania'),
+    'RI': u('Rhode Island'),
+    'SC': u('South Carolina'),
+    'SD': u('South Dakota'),
+    'TN': u('Tennessee'),
+    'TX': u('Texas'),
+    'UT': u('Utah'),
+    'VA': u('Virginia'),
+    'VT': u('Vermont'),
+    'WA': u('Washington'),
+    'WI': u('Wisconsin'),
+    'WV': u('West Virginia'),
+    'WY': u('Wyoming)',
 }
 
 
 with open(os.path.join(
         os.path.dirname(__file__),
-        'ch.cantons.svg')) as file:
+        'us.states.svg')) as file:
     CNT_MAP = file.read()
 
 
 class Cantons(BaseMap):
-    """Swiss Cantons map"""
-    x_labels = list(CANTONS.keys())
-    area_names = CANTONS
+    """US States map"""
+    x_labels = list(STATES.keys())
+    area_names = STATES
     area_prefix = 'z'
-    kind = 'canton'
+    kind = 'state'
     svg_map = CNT_MAP
