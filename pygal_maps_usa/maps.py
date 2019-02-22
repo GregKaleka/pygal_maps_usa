@@ -92,6 +92,6 @@ class States(BaseMap):
     """US States map"""
     x_labels = list(STATES.keys())
     area_names = STATES
-    area_prefix = 'z'
+    area_prefix = ''
     kind = 'state'
     svg_map = ST_MAP
