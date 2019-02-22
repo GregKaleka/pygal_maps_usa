@@ -23,9 +23,9 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name="pygal_maps_ch",
+    name="pygal_maps_usa",
     version='1.0.1',
-    description="Swiss canton map for pygal",
+    description="US state map for pygal",
     author="Serge droz",
     url="http://pygal.org/",
     author_email="serge.droz@switch.ch",
@@ -35,12 +35,12 @@ setup(
     provides=['pygal_maps_ch'],
     keywords=[
         "svg", "chart", "graph", "maps", "swiss"],
-    package_data={'pygal_maps_ch': ['*.svg']},
+    package_data={'pygal_maps_usa': ['*.svg']},
     install_requires=["pygal>=1.9.9"],
 
     entry_points={
         'pygal.maps': [
-            'ch = pygal_maps_ch.maps',
+            'usa = pygal_maps_usa.maps',
         ],
     },
     classifiers=[
