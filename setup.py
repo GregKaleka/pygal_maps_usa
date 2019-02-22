@@ -32,9 +32,9 @@ setup(
     license="GNU LGPL v3+",
     platforms="Any",
     packages=find_packages(),
-    provides=['pygal_maps_ch'],
+    provides=['pygal_maps_usa'],
     keywords=[
-        "svg", "chart", "graph", "maps", "swiss"],
+        "svg", "chart", "graph", "maps", "usa"],
     package_data={'pygal_maps_usa': ['*.svg']},
     install_requires=["pygal>=1.9.9"],
 
